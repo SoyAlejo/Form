@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+section {
+	width: 50%;
+	margin: auto;
+}
+
+.form {
+	padding: 1rem;
+}
+.form-regis {
+	margin: 1rem;
+}
+.form-regis__input {
+	padding: 1em;
+	font-size: 1rem;
+	border-radius: 3%;
+	width: 100%;
+}
+.form-regis__checkbox {
+	font-size: large;
+}
+
+.btn {
+	display: block;
+	width: 50%;
+	padding: 1rem;
+	margin: 1em auto;
+	background-color: crimson;
+	color: white;
+}
