@@ -25,6 +25,9 @@ section {
 	width: 100%;
 	border: solid 1px;
 }
+.form-regis__input:focus {
+	outline-color: #590082;
+}
 .form-regis__checkbox {
 	font-size: large;
 }
