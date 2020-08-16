@@ -12,16 +12,16 @@
 				<div class="imagen">
 					<img class="imagen-title" src="img/Merkar.png" alt="" />
 				</div>
-				<div class="form-regis">
+				<div class="form-regis >
 					<label for="Nombre">Nombres:</label>
 					<input
-						class="form-regis__input"
+						class="form-regis__input form-regis__colum"
 						type="text"
 						id="Nombre"
 						placeholder="Nombres"
 					/>
 				</div>
-				<div class="form-regis form-regis__error">
+				<div class="form-regis ">
 					<label for="Apellidos">Apellidos:</label>
 					<input
 						class="form-regis__input"
@@ -29,13 +29,6 @@
 						id="Apellidos"
 						placeholder="Apellidos"
 					/>
-				</div>
-				<div class="form-regis">
-					<input type="radio" name="sexo" id="hombre" value="Hombre" />
-					<label for="hombre">Hombre</label>
-
-					<input type="radio" name="sexo" id="mujer" value="Mujer" />
-					<label for="mujer">Mujer</label>
 				</div>
 				<div class="form-regis">
 					<label for="Telefono">Telefono:</label>
@@ -73,7 +66,14 @@
 						placeholder="Repetir Contraseña"
 					/>
 				</div>
-				<div class="form-regis checkbox">
+				<div class="form-regis">
+					<input type="radio" name="sexo" id="hombre" value="Hombre" />
+					<label for="hombre">Hombre</label>
+
+					<input type="radio" name="sexo" id="mujer" value="Mujer" />
+					<label for="mujer">Mujer</label>
+				</div>
+				<div class="form-regis form-regis__checkbox">
 					<input type="checkbox" name="terminos" id="terminos" value="true" />
 					<label for="terminos">Acepto los Terminos y Condiciones</label>
 				</div>
