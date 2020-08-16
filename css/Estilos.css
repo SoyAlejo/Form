@@ -6,15 +6,16 @@
 	-moz-box-sizing: border-box;
 }
 section {
-	width: 50%;
+	width: 40%;
 	margin: auto;
 }
 
 .form {
 	padding: 1rem;
+	font-size: 17px;
 }
 .form-regis {
-	margin: 1rem;
+	margin-top: 1rem;
 }
 
 .form-regis__input {
@@ -23,10 +24,6 @@ section {
 	position: relative;
 	width: 100%;
 	border: solid 1px;
-}
-.form-regis__input {
-	border: none;
-	border: linear-Gradient (50deg, crimson, #590082);
 }
 .form-regis__checkbox {
 	font-size: large;
@@ -51,7 +48,7 @@ section {
 }
 .boton {
 	color: white;
-	font-weight: 500;
+	font-size: 18px;
 	padding: 1rem;
 	background: linear-gradient(50deg, crimson, #590082);
 	border: 2px solid;
@@ -70,5 +67,5 @@ section {
 	color: black;
 	position: relative;
 	font-size: 1em;
-	border-radius: 3px;
+	border-radius: 30px;
 }
