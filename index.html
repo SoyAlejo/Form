@@ -30,25 +30,13 @@
 						placeholder="Apellidos"
 					/>
 				</div>
-
 				<div class="form-regis">
-					<input
-						class="form-regis__radio"
-						type="Radio"
-						name="Terminos"
-						id="Terminos"
-					/>
-					<label for="Terminos">Hombre</label>
+					<input type="radio" name="sexo" id="hombre" value="Hombre" />
+					<label for="hombre">Hombre</label>
 
-					<input
-						class="form-regis__radio"
-						type="radio"
-						name="Terminos"
-						id="Terminos"
-					/>
-					<label for="Terminos">Mujer</label>
+					<input type="radio" name="sexo" id="mujer" value="Mujer" />
+					<label for="mujer">Mujer</label>
 				</div>
-
 				<div class="form-regis">
 					<label for="Telefono">Telefono:</label>
 					<input
@@ -85,31 +73,14 @@
 						placeholder="Repetir Contraseña"
 					/>
 				</div>
-				<div class="form-regis">
-					<input
-						class="form-regis__checkbox"
-						type="checkbox"
-						name="Terminos"
-						id="Terminos"
-					/>
-					<label for="Terminos"> Acepta Terminos y Referencias</label>
+				<div class="form-regis checkbox">
+					<input type="checkbox" name="terminos" id="terminos" value="true" />
+					<label for="terminos">Acepto los Terminos y Condiciones</label>
 				</div>
+
 				<div>
 					<input class="boton" type="submit" value="Enviar" />
 				</div>
-				<div class="form-regis">
-					<input type="radio" name="sexo" id="hombre" value="Hombre">
-					<label for="hombre">Hombre</label>
-					<input type="radio" name="sexo" id="mujer" value="Mujer">
-					<label for="mujer">Mujer</label>
-				</div>
-				
-				</div>
-        </div>
-        <div class="input-group checkbox">
-          <input type="checkbox" name="terminos" id="terminos" value="true">
-          <label for="terminos">Acepto los Terminos y Condiciones</label>
-        </div>
 			</form>
 		</section>
 	</body>
