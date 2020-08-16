@@ -9,6 +9,9 @@
 	<body>
 		<section>
 			<form class="form" action="#" method="POST">
+				<div class="imagen">
+					<img class="imagen-title" src="img/Merkar.png" alt="" />
+				</div>
 				<div class="form-regis">
 					<label for="Nombre">Nombres:</label>
 					<input
@@ -18,7 +21,7 @@
 						placeholder="Nombres"
 					/>
 				</div>
-				<div class="form-regis">
+				<div class="form-regis form-regis__error">
 					<label for="Apellidos">Apellidos:</label>
 					<input
 						class="form-regis__input"
@@ -65,30 +68,21 @@
 					/>
 				</div>
 				<div class="form-regis">
-					<label for="Departamento">Departamento:</label>
-					<input
-						class="form-regis__input"
-						type="text"
-						id="Departamento"
-						placeholder="Departamento"
-					/>
-				</div>
-				<div class="form-regis">
-					<label for="Ciudad">Ciudad:</label>
-					<input
-						class="form-regis__input"
-						type="text"
-						id="Ciudad"
-						placeholder="Ciudad"
-					/>
-				</div>
-				<div class="form-regis">
 					<label for="Contraseña">Contraseña:</label>
 					<input
 						class="form-regis__input"
 						type="password"
 						id="Contraseña"
 						placeholder="Contraseña"
+					/>
+				</div>
+				<div class="form-regis">
+					<label for="Contraseña2">Repetir Contraseña:</label>
+					<input
+						class="form-regis__input"
+						type="password"
+						id="Contraseña2"
+						placeholder="Repetir Contraseña"
 					/>
 				</div>
 				<div class="form-regis">
@@ -101,26 +95,22 @@
 					<label for="Terminos"> Acepta Terminos y Referencias</label>
 				</div>
 				<div>
-					<input class="btn" type="submit" value="Enviar" />
+					<input class="boton" type="submit" value="Enviar" />
 				</div>
-				<div
-					class="fb-login-button"
-					data-size="large"
-					data-button-type="continue_with"
-					data-layout="default"
-					data-auto-logout-link="false"
-					data-use-continue-as="false"
-					data-width=""
-				></div>
+				<div class="form-regis">
+					<input type="radio" name="sexo" id="hombre" value="Hombre">
+					<label for="hombre">Hombre</label>
+					<input type="radio" name="sexo" id="mujer" value="Mujer">
+					<label for="mujer">Mujer</label>
+				</div>
+				
+				</div>
+        </div>
+        <div class="input-group checkbox">
+          <input type="checkbox" name="terminos" id="terminos" value="true">
+          <label for="terminos">Acepto los Terminos y Condiciones</label>
+        </div>
 			</form>
 		</section>
-		<div id="fb-root"></div>
-		<script
-			async
-			defer
-			crossorigin="anonymous"
-			src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0"
-			nonce="tArVfrDZ"
-		></script>
 	</body>
 </html>
