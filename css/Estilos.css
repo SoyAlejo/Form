@@ -72,3 +72,8 @@ section {
 	font-size: 1em;
 	border-radius: 30px;
 }
+@media (max-width: 800px){
+	section{
+		width:100%;
+	}
+}
