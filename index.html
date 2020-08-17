@@ -8,26 +8,28 @@
 	</head>
 	<body>
 		<section>
-			<form class="form" action="#" method="POST">
+			<form class="form" action="#" name="form_regis" method="POST">
 				<div class="imagen">
 					<img class="imagen-title" src="img/Merkar.png" alt="" />
 				</div>
-				<div class="form-regis >
-					<label for="Nombre">Nombres:</label>
+				<div class="form-regis">
+					<label class="lavel" for="Nombre">Nombres:</label>
 					<input
-						class="form-regis__input form-regis__colum"
+						class="form-regis__input"
 						type="text"
 						id="Nombre"
 						placeholder="Nombres"
+						required
 					/>
 				</div>
-				<div class="form-regis ">
-					<label for="Apellidos">Apellidos:</label>
+				<div class="form-regis">
+					<label class="lavel" for="Apellidos">Apellidos:</label>
 					<input
 						class="form-regis__input"
 						type="text"
 						id="Apellidos"
 						placeholder="Apellidos"
+						required
 					/>
 				</div>
 				<div class="form-regis">
@@ -37,6 +39,7 @@
 						type="tel"
 						id="Telefono"
 						placeholder="Telefono"
+						required
 					/>
 				</div>
 				<div class="form-regis">
@@ -46,6 +49,7 @@
 						type="email"
 						id="Correo"
 						placeholder="Correo Electronico"
+						required
 					/>
 				</div>
 				<div class="form-regis">
@@ -55,6 +59,7 @@
 						type="password"
 						id="Contraseña"
 						placeholder="Contraseña"
+						required
 					/>
 				</div>
 				<div class="form-regis">
@@ -64,17 +69,39 @@
 						type="password"
 						id="Contraseña2"
 						placeholder="Repetir Contraseña"
+						required
 					/>
 				</div>
-				<div class="form-regis">
-					<input class="form-regis__radio" type="radio" name="sexo" id="hombre" value="Hombre" />
-					<label for="hombre">Hombre</label>
+				<div class="form-regis" required>
+					<input
+						class="form-regis__radio"
+						type="radio"
+						name="sexo"
+						id="hombre"
+						value="Hombre"
+						required
+					/>
+					<label class="" for="hombre">Hombre</label>
 
-					<input class="form-regis__radio" type="radio" name="sexo" id="mujer" value="Mujer" />
+					<input
+						class="form-regis__radio"
+						type="radio"
+						name="sexo"
+						id="mujer"
+						value="Mujer"
+						required
+					/>
 					<label for="mujer">Mujer</label>
 				</div>
 				<div class="form-regis">
-					<input class="form-regis__checkbox" type="checkbox" name="terminos" id="terminos" value="true" />
+					<input
+						class="form-regis__checkbox"
+						type="checkbox"
+						name="terminos"
+						id="terminos"
+						value="true"
+						required
+					/>
 					<label for="terminos">Acepto los Terminos y Condiciones</label>
 				</div>
 
@@ -83,5 +110,6 @@
 				</div>
 			</form>
 		</section>
+		<script src="js/Form.js"></script>
 	</body>
 </html>
