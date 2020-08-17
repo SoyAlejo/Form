@@ -82,6 +82,20 @@ section {
 	font-size: 1em;
 	border-radius: 30px;
 }
+
+.boton-title {
+	text-align: center;
+	font-size: 15px;
+}
+.boton-img {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.boton-img__logo {
+	width: 15%;
+	margin: auto;
+}
 @media (max-width: 800px) {
 	section {
 		width: 100%;
