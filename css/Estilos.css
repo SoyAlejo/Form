@@ -6,7 +6,7 @@
 	-moz-box-sizing: border-box;
 }
 section {
-	width: 40%;
+	width: 50%;
 	margin: auto;
 }
 
@@ -28,8 +28,17 @@ section {
 .form-regis__input:focus {
 	outline-color: #590082;
 }
+.form-regis__radio {
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+}
 .form-regis__checkbox {
 	font-size: large;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
 }
 .imagen {
 	text-align: center;
@@ -38,6 +47,7 @@ section {
 	width: 20%;
 	margin: auto;
 }
+/* ---------Boton-------- */
 .boton {
 	display: block;
 	width: 50%;
@@ -72,8 +82,8 @@ section {
 	font-size: 1em;
 	border-radius: 30px;
 }
-@media (max-width: 800px){
-	section{
-		width:100%;
+@media (max-width: 800px) {
+	section {
+		width: 100%;
 	}
 }
