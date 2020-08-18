@@ -5,10 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Formulario</title>
 		<link rel="stylesheet" href="css/Estilos.css" />
+		<script src="js/Form.js"></script>
 	</head>
 	<body>
 		<section>
-			<form class="form" action="#" name="form_regis" method="POST">
+			<form
+				class="form"
+				action="#"
+				name="form_regis"
+				method="POST"
+				onsubmit="return validar();"
+			>
 				<div class="imagen">
 					<img class="imagen-title" src="img/Merkar.png" alt="" />
 				</div>
@@ -40,6 +47,7 @@
 						id="Telefono"
 						placeholder="Telefono"
 						required
+						title="Utilice un número de teléfono válido"
 					/>
 				</div>
 				<div class="form-regis">
@@ -59,7 +67,6 @@
 						type="password"
 						id="Contraseña"
 						placeholder="Contraseña"
-						required
 					/>
 				</div>
 				<div class="form-regis">
@@ -69,7 +76,6 @@
 						type="password"
 						id="Contraseña2"
 						placeholder="Repetir Contraseña"
-						required
 					/>
 				</div>
 				<div class="form-regis" required>
@@ -107,7 +113,11 @@
 
 				<div>
 					<input class="boton" type="submit" value="Registrar" />
+					<h4 class="boton-title">
+						¿Ya tienes una cuenta? <a href="#"> ingresa aqui</a>
+					</h4>
 				</div>
+
 				<div>
 					<h3 class="boton-title">Registrar con</h3>
 
