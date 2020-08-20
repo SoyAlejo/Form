@@ -7,7 +7,6 @@ function validar() {
 		alert("Las passwords deben de coincidir");
 		return false;
 	} else {
-		alert("");
 		return true;
 	}
 }
