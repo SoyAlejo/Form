@@ -11,6 +11,9 @@ section {
 	margin: auto;
 	
 }
+body{
+background: -webkit-linear-gradient(-45deg, rgba(30,29,31,1) 0%, rgba(223,64,90,1) 100%);
+}
 
 .form {
 	margin-top:10px ;
@@ -21,7 +24,7 @@ section {
 	font-size: 17px;
 	background-color:whitesmoke;
 	border: 1px solid ;
-	box-shadow: 7px 13px 37px 0 gray;
+	box-shadow: 7px 13px 37px 0 black;
 
 }
 .form-regis {
@@ -107,12 +110,13 @@ section {
 	width: 15%;
 	margin: auto;
 }
-.error {
-	border: 2px solid red;
+
+
+input:invalid {
+  border: 2px solid rgba(93, 3, 109, 0.979);
 }
-input.invalid {
-        border-color: #DD2C00;
-}
+
+
 @media (max-width: 800px) {
 	section {
 		width: 90%;
