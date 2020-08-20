@@ -1,137 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Formulario</title>
-		<link rel="stylesheet" href="css/Estilos.css" />
-		<script src="js/Form.js"></script>
-	</head>
-	<body>
-		<section>
-			<form
-				class="form"
-				action="#"
-				name="form_regis"
-				method="POST"
-				onsubmit="return validar();"
-			>
-				<div class="imagen">
-					<img class="imagen-title" src="img/Merkar.png" alt="" />
-				</div>
-				<div class="form-regis">
-					<label class="lavel" for="Nombre">Nombres:</label>
-					<input
-						class="form-regis__input"
-						type="text"
-						id="Nombre"
-						placeholder="Nombres"
-						required
-					/>
-				</div>
-				<div class="form-regis">
-					<label class="lavel" for="Apellidos">Apellidos:</label>
-					<input
-						class="form-regis__input"
-						type="text"
-						id="Apellidos"
-						placeholder="Apellidos"
-						required
-					/>
-				</div>
-				<div class="form-regis">
-					<label for="Telefono">Telefono:</label>
-					<input
-						class="form-regis__input"
-						type="tel"
-						id="Telefono"
-						placeholder="Telefono"
-						required
-						title="Utilice un número de teléfono válido"
-					/>
-				</div>
-				<div class="form-regis">
-					<label for="Correo">Correo Electronico</label>
-					<input
-						class="form-regis__input"
-						type="email"
-						id="Correo"
-						placeholder="Correo Electronico"
-						required
-					/>
-				</div>
-				<div class="form-regis">
-					<label for="Contraseña">Contraseña:</label>
-					<input
-						class="form-regis__input"
-						type="password"
-						id="Contraseña"
-						placeholder="Contraseña"
-					/>
-				</div>
-				<div class="form-regis">
-					<label for="Contraseña2">Repetir Contraseña:</label>
-					<input
-						class="form-regis__input"
-						type="password"
-						id="Contraseña2"
-						placeholder="Repetir Contraseña"
-					/>
-				</div>
-				<div class="form-regis" required>
-					<input
-						class="form-regis__radio"
-						type="radio"
-						name="sexo"
-						id="hombre"
-						value="Hombre"
-						required
-					/>
-					<label class="" for="hombre">Hombre</label>
 
-					<input
-						class="form-regis__radio"
-						type="radio"
-						name="sexo"
-						id="mujer"
-						value="Mujer"
-						required
-					/>
-					<label for="mujer">Mujer</label>
-				</div>
-				<div class="form-regis">
-					<input
-						class="form-regis__checkbox"
-						type="checkbox"
-						name="terminos"
-						id="terminos"
-						value="true"
-						required
-					/>
-					<label for="terminos">Acepto los Terminos y Condiciones</label>
-				</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/Estilos.css" />
+	<script src="js/Form.js"></script>
+</head>
 
-				<div>
-					<input class="boton" type="submit" value="Registrar" />
-					<h4 class="boton-title">
-						¿Ya tienes una cuenta? <a href="#"> ingresa aqui</a>
-					</h4>
+<body>
+	<section>
+		<form class="form" action="#" name="form" method="POST" onsubmit="return validar();">
+			<div class="imagen">
+				<img class="imagen-title" src="img/Merkar.png" alt="" />
+			</div>
+			<div class="form-regis">
+				<label class="lavel" for="Nombre">Nombres:</label>
+				<input class="form-regis__input" type="text" id="Nombre" placeholder="Nombres" required />
+			</div>
+			<div class="form-regis">
+				<label class="lavel" for="Apellidos">Apellidos:</label>
+				<input class="form-regis__input" type="text" id="Apellidos" placeholder="Apellidos" required />
+			</div>
+			<div class="form-regis">
+				<label for="Telefono">Telefono:</label>
+				<input class="form-regis__input" type="tel" id="Telefono" placeholder="Telefono" required
+					title="Utilice un número de teléfono válido" />
+			</div>
+			<div class="form-regis">
+				<label for="Correo">Correo Electronico</label>
+				<input class="form-regis__input" type="email" id="Correo" placeholder="Correo Electronico" required />
+			</div>
+			<div class="form-regis">
+				<label for="pass">Contraseña:</label>
+				<input class="form-regis__input" type="password" id="pass" placeholder="Contraseña" required/>
+			</div>
+			<div class="form-regis">
+				<label for="pass2">Repetir Contraseña:</label>
+				<input class="form-regis__input" type="password" id="pass2" placeholder="Repetir Contraseña" required/>
+			</div>
+			<div class="form-regis" required>
+				<input class="form-regis__radio" type="radio" name="sexo" id="hombre" value="Hombre" required />
+				<label class="" for="hombre">Hombre</label>
+
+				<input class="form-regis__radio" type="radio" name="sexo" id="mujer" value="Mujer" required />
+				<label for="mujer">Mujer</label>
+			</div>
+			<div class="form-regis">
+				<input class="form-regis__checkbox" type="checkbox" name="terminos" id="terminos" value="true"
+					required />
+				<label for="terminos">Acepto los Terminos y Condiciones</label>
+			</div>
+
+			<div>
+				<input class="boton" type="submit" value="Registrar" />
+				<h4 class="boton-title">
+					¿Ya tienes una cuenta? <a href="#"> ingresa aqui</a>
+				</h4>
+			</div>
+
+			<div>
+				<h3 class="boton-title">Registrar con</h3>
+
+				<div class="boton-img">
+					<a href="#">
+						<img class="boton-img__logo" src="img/Facebook.png" alt="" />
+					</a>
+
+					<a href="#">
+						<img class="boton-img__logo" src="img/Google.png" alt="" />
+					</a>
 				</div>
+			</div>
+		</form>
+	</section>
+</body>
 
-				<div>
-					<h3 class="boton-title">Registrar con</h3>
-
-					<div class="boton-img">
-						<a href="#">
-							<img class="boton-img__logo" src="img/Facebook.png" alt="" />
-						</a>
-
-						<a href="#">
-							<img class="boton-img__logo" src="img/Google.png" alt="" />
-						</a>
-					</div>
-				</div>
-			</form>
-		</section>
-	</body>
 </html>

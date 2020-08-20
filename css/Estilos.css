@@ -5,14 +5,24 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+
 section {
-	width: 50%;
+	width:40%;
 	margin: auto;
+	
 }
 
 .form {
-	padding: 1rem;
+	margin-top:10px ;
+	margin-bottom: 10px;
+	padding-left: 2rem ;
+	padding-right: 2rem;
+	padding-top:1rem  ;
 	font-size: 17px;
+	background-color:whitesmoke;
+	border: 1px solid ;
+	box-shadow: 7px 13px 37px 0 gray;
+
 }
 .form-regis {
 	margin-top: 1rem;
@@ -97,11 +107,15 @@ section {
 	width: 15%;
 	margin: auto;
 }
-@media (max-width: 800px) {
-	section {
-		width: 100%;
-	}
-}
 .error {
 	border: 2px solid red;
+}
+input.invalid {
+        border-color: #DD2C00;
+}
+@media (max-width: 800px) {
+	section {
+		width: 90%;
+		
+	}
 }
