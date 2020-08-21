@@ -4,7 +4,7 @@ function validar() {
 	var pass2 = document.getElementById("pass2").value;
 
 	if (pass != pass2) {
-		alert("Las passwords deben de coincidir");
+		alert("Las contraseñas deben de coincidir");
 		return false;
 	} else {
 		return true;
